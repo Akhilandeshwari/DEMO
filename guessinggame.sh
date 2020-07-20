@@ -10,13 +10,11 @@ function guess:
                 then
                         echo "Your guess is below the score. Try to increase it"
                         guess
-                elif [ $nf -gt $n ]
+                else [ $nf -gt $n ]
                         echo "Your guess is too high. Try to decrease the value"
                         guess
-                else
-                        echo "Congratualations!!! You have won the game"
-                fi
         done
+        echo "Congratulations!!! You have won the game"
 }
 echo "Welcome to the Guessing Game"
 echo "Try to guess the Number of files inthe present working directory"
